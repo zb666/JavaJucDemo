@@ -10,5 +10,7 @@ public class App {
         blockingQueue.put("Mic");
         blockingQueue.take();
         System.out.println("Hello World");
+
+        new Thread().join();
     }
 }
