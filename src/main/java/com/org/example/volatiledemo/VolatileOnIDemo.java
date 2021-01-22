@@ -1,10 +1,10 @@
 package com.org.example.volatiledemo;
 
-import org.example.DateUtil;
+import com.org.example.DateUtil;
 import org.junit.Test;
 
 public class VolatileOnIDemo {
-    public static  boolean stop = false;
+    public static boolean stop = false;
     private volatile static int i = 0; //这里的i也会触发切换<br>
 
     /**

@@ -1,6 +1,6 @@
 package com.org.example.volatiledemo;
 
-import org.example.DateUtil;
+import com.org.example.DateUtil;
 import org.junit.Test;
 
 import java.io.File;

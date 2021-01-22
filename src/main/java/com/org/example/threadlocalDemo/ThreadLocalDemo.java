@@ -6,6 +6,7 @@ package com.org.example.threadlocalDemo;
 
 
 public class ThreadLocalDemo {
+
     //private static  int num=0;
     private static ThreadLocal<Integer> local=new ThreadLocal<Integer>(){
         @Override
@@ -13,6 +14,7 @@ public class ThreadLocalDemo {
             return 0;
         }
     };
+
     public static void main(String[] args) {
         for(int i=0;i<5;i++){
             new Thread(()->{
