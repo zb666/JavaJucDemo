@@ -21,6 +21,11 @@ public class CountDownLaunchDemo {
 
         new Thread(()->{
             System.out.println(Thread.currentThread().getName()+"->begin");
+            try {
+                Thread.sleep(3000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
             countDownLatch.countDown();
             System.out.println(Thread.currentThread().getName()+"->end");
         },"t3").start();
@@ -29,7 +34,6 @@ public class CountDownLaunchDemo {
         System.out.println("阻塞开始");
         countDownLatch.await();
         System.out.println("阻塞结束");
-
     }
 
 }
